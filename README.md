@@ -1,73 +1,44 @@
-# Mini\_Integer\_Language
+# Mini_Integer_Language
 
-this project implements a line by line integer based programming language that allows for assignment, operations, and printing using a custom tokenizer and parser.
+This project implements a line-by-line integer-based programming language that allows for assignment, operations, and printing using a custom tokenizer and parser.
 
+## Syntax Rules
 
+VALUE (either an integer literal or a variable reference)  
+Unless assigning, VALUE must be pre-defined before operating on it.
 
-\# Syntax rules:
-
-
-
-VALUE (either an integer literal or a variable reference)
-
-Unless assigning, Value must be pre-defined before operating on
-
-
-
-\## Valid Operations...
-
-(Spaces don't matter)
-
+## Valid Operations
+(Spaces don't matter)  
 (Operations evaluate left to right)
 
-VALUE + VALUE
-
-VALUE \* VALUE
-
-VALUE / VALUE
-
+VALUE + VALUE  
+VALUE * VALUE  
+VALUE / VALUE  
 VALUE - VALUE
 
+## Valid Assignment (may also declare a variable)
 
+VALUE = OPERATION  
+You may also define a new variable by typing the name without assignment.
 
-\## Valid Assignment (may also declare a variable)...
-
-VALUE = OPERATION
-
-(you may also define a new variable by typing the name without assignment)
-
-
-
-\## Valid Print...
-
-(in this case, VALUE may be an integer literal, a pre-defined reference or an operation)
+## Valid Print
+(In this case, VALUE may be an integer literal, a pre-defined reference, or an operation)
 
 PRINT VALUE
 
+## Example Case
 
-
-\## EXAMPLE CASE...
-
-x = 3 \[ENTER]
-
-y = x\*2 \[ENTER]
-
-PRINT y \* x + 2 \[ENTER]
-
+x = 3  
+y = x*2  
+PRINT y * x + 2  
 > 20
 
-y = z + 3 \[ENTER]
-
+y = z + 3  
 > SYNTAX ERROR!
 
+## Note
 
-
-\## Note
-
-This language also allows for the support of negative numbers, just be sure to not include any spaces between the negative sign and the integer
-
-
-
+This language also supports negative numbers. Just be sure not to include any spaces between the negative sign and the integer.
 
 
 
